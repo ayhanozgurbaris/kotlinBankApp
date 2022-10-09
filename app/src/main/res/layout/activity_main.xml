@@ -15,7 +15,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="128dp"
         android:layout_marginEnd="38dp"
-        android:text="GSM numaranı ve şifreni girerek FUPS hesabına giriş yapabilirsin"
+        android:text="@string/login_info"
         android:textAlignment="center"
         android:textColor="@color/tepe"
         android:textSize="16px"
@@ -100,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="22dp"
-        android:text="Şifremmi unuttum"
+        android:text="@string/forget_password"
         android:textColor="@color/mavi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordId" />
