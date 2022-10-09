@@ -5,39 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
+
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="240dp"
-        android:layout_height="53dp"
+        android:id="@+id/howToLoginId"
+        android:layout_width="335dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="38dp"
         android:text="GSM numaranı ve şifreni girerek FUPS hesabına giriş yapabilirsin"
+        android:textAlignment="center"
         android:textColor="@color/tepe"
         android:textSize="16px"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="154dp" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editulkeKodu"
-        android:layout_width="109dp"
-        android:layout_height="57dp"
+        android:id="@+id/countryCodeId"
+        android:layout_width="128px"
+        android:layout_height="56px"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/edittextbackgroung"
         android:ems="10"
         android:hint="ulkeKodu"
         android:inputType="textPersonName"
         android:paddingLeft="20px"
-        android:paddingTop="16px"
+        android:paddingTop="7px"
         android:paddingRight="20px"
-        android:paddingBottom="16px"
+        android:paddingBottom="7px"
         android:textColorHint="@color/gray"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToLoginId" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="166dp"
-        android:layout_height="58dp"
+        android:id="@+id/gsmId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edittextbackgroung"
         android:ems="10"
         android:hint="GSM Numaran"
@@ -47,33 +57,53 @@
         android:paddingRight="20px"
         android:paddingBottom="16px"
         android:textColorHint="@color/gray"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="278dp" />
+        app:layout_constraintBottom_toTopOf="@+id/passwordId"
+        app:layout_constraintEnd_toEndOf="@+id/passwordId"
+        app:layout_constraintStart_toEndOf="@+id/countryCodeId"
+        app:layout_constraintTop_toBottomOf="@+id/howToLoginId" />
 
     <EditText
-        android:id="@+id/editsifren"
-        android:layout_width="wrap_content"
+        android:id="@+id/passwordId"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/edittextbackgroung"
         android:ems="10"
-        android:hint="sifre"
+        android:hint="Şifren"
         android:inputType="textPersonName"
         android:paddingLeft="20px"
         android:paddingTop="16px"
         android:paddingRight="20px"
         android:paddingBottom="16px"
         android:textColorHint="@color/gray"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="360dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gsmId" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/loginId"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/buttonbackground"
         android:text="Giriş"
         android:textSize="14px"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="457dp" />
+        app:layout_constraintEnd_toEndOf="@+id/passwordId"
+        app:layout_constraintStart_toStartOf="@+id/passwordId"
+        app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId" />
+
+    <TextView
+        android:id="@+id/forgetPasswordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="Şifremmi unuttum"
+        android:textColor="@color/mavi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordId" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
