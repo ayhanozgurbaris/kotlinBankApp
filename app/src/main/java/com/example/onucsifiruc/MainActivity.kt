@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -13,24 +14,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+
         val loginKey = findViewById<Button>(R.id.loginId);
         loginKey.setOnClickListener{
 
-            val Intent = Intent(this,GirisYapildi::class.java)
-            startActivity(Intent)
+            callActivity()
         }
-
 
 
 
         val forgetPasswordKey = findViewById<Button>(R.id.forgetPasswordId);
         forgetPasswordKey.setOnClickListener{
-
             val Intent = Intent(this,EmptyActivity::class.java)
             startActivity(Intent)
         }
-
-
-
     }
+
+    private fun callActivity(){
+        val editText = findViewById<EditText>(R.id.passwordId);
+        val message = editText.text.toString()
+
+        val intent = Intent(this,GirisYapildi::class.java).also {
+            it.putExtra("EXTRA_MESSAGE",message)
+            startActivity(it)
+        }
+    }
+
 }
