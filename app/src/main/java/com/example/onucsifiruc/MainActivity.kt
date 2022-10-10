@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val loginKey = findViewById<Button>(R.id.loginId);
         loginKey.setOnClickListener{
 
-            callActivity()
+            callPasswordAtSecondPage()
         }
 
 
@@ -28,9 +28,20 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent(this,EmptyActivity::class.java)
             startActivity(Intent)
         }
+
+
+
+        val hesabinlaNelerYapabilirsinKey = findViewById<Button>(R.id.hesabınlaNelerYapabilirsin);
+        hesabinlaNelerYapabilirsinKey.setOnClickListener{
+            val Intent = Intent(this,EmptyActivity::class.java)
+            startActivity(Intent)
+        }
+
+
+
     }
 
-    private fun callActivity(){
+    private fun callPasswordAtSecondPage(){
         val editText = findViewById<EditText>(R.id.passwordId);
         val message = editText.text.toString()
 
@@ -39,5 +50,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(it)
         }
     }
+
+
+
+
 
 }
