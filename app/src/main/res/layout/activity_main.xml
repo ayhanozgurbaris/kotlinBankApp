@@ -10,6 +10,7 @@
 
     <TextView
         android:id="@+id/howToLoginId"
+        android:fontFamily="@font/roboto_regular"
         android:layout_width="335dp"
         android:layout_height="38dp"
         android:layout_marginStart="38dp"
@@ -43,6 +44,7 @@
 
     <EditText
         android:id="@+id/gsmId"
+        android:fontFamily="@font/roboto_regular"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -64,6 +66,7 @@
 
     <EditText
         android:id="@+id/passwordId"
+        android:fontFamily="@font/roboto_regular"
         android:textColor="@color/mavi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -85,6 +88,7 @@
 
     <Button
         android:id="@+id/loginId"
+        android:fontFamily="@font/roboto_bold"
         android:layout_width="0dp"
         android:layout_height="53dp"
         android:layout_marginTop="26dp"
@@ -97,6 +101,7 @@
 
     <Button
         android:background="?selectableItemBackground"
+        android:fontFamily="@font/roboto_bold"
         android:textAllCaps="false"
         android:id="@+id/forgetPasswordId"
         android:layout_width="wrap_content"
@@ -111,6 +116,7 @@
 
     <Button
         android:background="?selectableItemBackground"
+        android:fontFamily="@font/roboto_medium"
         android:id="@+id/hesabınlaNelerYapabilirsin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
