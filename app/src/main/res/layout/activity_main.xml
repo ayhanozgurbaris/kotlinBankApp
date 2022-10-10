@@ -94,7 +94,9 @@
         app:layout_constraintStart_toStartOf="@+id/passwordId"
         app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId" />
 
-    <TextView
+    <Button
+        android:background="?selectableItemBackground"
+        android:textAllCaps="false"
         android:id="@+id/forgetPasswordId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

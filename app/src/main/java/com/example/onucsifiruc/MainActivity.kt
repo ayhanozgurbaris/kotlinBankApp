@@ -18,5 +18,16 @@ class MainActivity : AppCompatActivity() {
             val Intent = Intent(this,EmptyScreen::class.java)
             startActivity(Intent)
         }
+
+
+        val forgetPasswordKey = findViewById<Button>(R.id.forgetPasswordId);
+        forgetPasswordKey.setOnClickListener{
+
+            val Intent = Intent(this,EmptyScreen::class.java)
+            startActivity(Intent)
+        }
+
+
+
     }
 }
