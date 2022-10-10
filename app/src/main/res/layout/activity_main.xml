@@ -24,6 +24,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
+
     <EditText
         android:id="@+id/countryCodeId"
         android:layout_width="128px"
@@ -41,6 +44,9 @@
         android:textColorHint="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/howToLoginId" />
+
+
+
 
     <EditText
         android:id="@+id/gsmId"
@@ -126,6 +132,30 @@
         android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginId" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="111dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fups" />
+
+    <!--
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/countryCodeId"
+        app:layout_constraintEnd_toEndOf="@+id/countryCodeId"
+        app:layout_constraintStart_toStartOf="@+id/countryCodeId"
+        app:layout_constraintTop_toTopOf="@+id/countryCodeId" />
+
+    -->
+
 
 
 
