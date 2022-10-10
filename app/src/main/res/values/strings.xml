@@ -2,4 +2,11 @@
     <string name="app_name">OnucSifirUc</string>
     <string name="login_info">GSM numaranı ve şifreni girerek FUPS hesabına giriş yapabilirsin</string>
     <string name="forget_password">Şifremi Unuttum</string>
+    <string name="ulke_kodu">Ülke Kodu</string>
+    <string name="gsm_no">GSM Numaran</string>
+    <string name="giris">GİRİŞ</string>
+    <string name="hesabinla_neler_yapabilirsin">HESABINLA NELER YAPABİLİRSİN</string>
+    <string name="password">Şifren</string>
+
+
 </resources>
