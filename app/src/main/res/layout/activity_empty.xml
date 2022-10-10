@@ -12,7 +12,7 @@
         android:id="@+id/activityEmptyId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hoşgeldiniz"
+        android:text="Empty Screen"
         android:textColor="@color/mavi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

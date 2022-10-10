@@ -12,18 +12,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         val loginKey = findViewById<Button>(R.id.loginId);
         loginKey.setOnClickListener{
 
-            val Intent = Intent(this,EmptyScreen::class.java)
+            val Intent = Intent(this,GirisYapildi::class.java)
             startActivity(Intent)
         }
+
+
 
 
         val forgetPasswordKey = findViewById<Button>(R.id.forgetPasswordId);
         forgetPasswordKey.setOnClickListener{
 
-            val Intent = Intent(this,EmptyScreen::class.java)
+            val Intent = Intent(this,EmptyActivity::class.java)
             startActivity(Intent)
         }
 

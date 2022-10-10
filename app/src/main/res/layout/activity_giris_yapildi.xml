@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".EmptyScreen">
+    tools:context=".GirisYapildi">
+
 
 
     <TextView
-        android:id="@+id/secondPage"
+        android:id="@+id/activityEmptyId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hoşgeldiniz"
+        android:text="Giris Yapildi"
         android:textColor="@color/mavi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
