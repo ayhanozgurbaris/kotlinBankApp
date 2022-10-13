@@ -285,6 +285,14 @@
                     tools:layout_editor_absoluteX="118dp"
                     tools:layout_editor_absoluteY="548dp" />
 
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="248dp"
+                    android:layout_marginTop="132dp"
+                    app:srcCompat="@drawable/chevron" />
+
 
             </androidx.cardview.widget.CardView>
 
@@ -334,6 +342,13 @@
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="20dp"
                     app:srcCompat="@drawable/playstore" />
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="248dp"
+                    android:layout_marginTop="132dp"
+                    app:srcCompat="@drawable/chevron" />
 
 
             </androidx.cardview.widget.CardView>
