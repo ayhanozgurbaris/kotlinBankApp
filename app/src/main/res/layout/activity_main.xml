@@ -79,6 +79,9 @@
 
     </androidx.cardview.widget.CardView>
 
+
+    <!--
+
     <EditText
         android:id="@+id/gsmId"
         android:layout_width="0dp"
@@ -104,6 +107,7 @@
         app:layout_constraintStart_toEndOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
         tools:ignore="DuplicateIds" />
+    -->
 
     <EditText
         android:id="@+id/passwordId"
@@ -359,6 +363,35 @@
 
 
     </HorizontalScrollView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@id/gsmId"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_round"
+        android:ems="10"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/gsm_no"
+        android:inputType="number"
+        android:textColor="@color/mavi"
+        android:textColorHint="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
