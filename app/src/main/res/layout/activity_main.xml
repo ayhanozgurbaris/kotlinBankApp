@@ -219,10 +219,12 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/bannerone"
                 android:layout_width="276dp"
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:clickable="true"
+
 
                 android:paddingTop="0dp"
                 app:cardBackgroundColor="@color/white"
@@ -282,6 +284,7 @@
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/bannertwo"
                 android:layout_width="276dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="16dp"
