@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
 
-
     <TextView
         android:id="@+id/howToLoginId"
         android:layout_width="335dp"
@@ -27,7 +26,6 @@
     <EditText
         android:id="@+id/gsmId"
         android:layout_width="0dp"
-        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
@@ -46,8 +44,7 @@
         android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/passwordId"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
         tools:ignore="DuplicateIds" />
 
@@ -109,7 +106,6 @@
 
     <Button
         android:id="@+id/hesabınlaNelerYapabilirsin"
-        android:textSize="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -124,6 +120,7 @@
         android:minHeight="0dp"
         android:text="@string/hesabinla_neler_yapabilirsin"
         android:textColor="@color/gray"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginId" />
 
@@ -131,12 +128,12 @@
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="170dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hesabınlaNelerYapabilirsin"
-        app:layout_constraintVertical_bias="0.032"
+        app:layout_constraintVertical_bias="0.988"
         app:srcCompat="@drawable/image" />
 
     <ImageView
@@ -157,20 +154,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_fups" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <HorizontalScrollView
+        android:layout_width="415dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hesabınlaNelerYapabilirsin"
+        app:layout_constraintVertical_bias="0.976">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frameLayout"
         android:layout_width="128dp"
         android:layout_height="55dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="263dp"
         android:background="@drawable/edit_round"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
-        app:srcCompat="@drawable/country" />
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="@+id/passwordId"
+        app:layout_constraintTop_toTopOf="@+id/gsmId"
+        tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingStart="20dp"
+            android:paddingTop="8dp"
+            android:text="Ülke Kodu"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="+90"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </androidx.cardview.widget.CardView>
 
 
     <!--
