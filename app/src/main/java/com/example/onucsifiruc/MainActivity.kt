@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
         val loginKey = findViewById<Button>(R.id.loginId);
         loginKey.setOnClickListener{
             callPasswordAtSecondPage()

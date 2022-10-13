@@ -214,6 +214,24 @@
 
     </androidx.cardview.widget.CardView>
 
+    <ImageButton
+        android:id="@+id/imageView5"
+        android:background="@color/background"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginEnd="21dp"
+        android:paddingVertical="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="@+id/forgetPasswordId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/forgetPasswordId"
+        app:srcCompat="@drawable/ic_stat_name"
+        app:tint="@color/mavi" />
+
 
     <!--
     <TextView
