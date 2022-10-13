@@ -206,102 +206,136 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="415dp"
+        android:layout_width="wrap_content"
         android:layout_height="151dp"
         android:layout_marginBottom="32dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="10dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="310dp"
-            app:cardBackgroundColor="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/image2" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="276dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="20dp"
-                android:layout_height="26dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="20dp"
-                app:srcCompat="@drawable/playstore" />
+                android:paddingTop="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
+                app:layout_constraintStart_toStartOf="@+id/horizontalScrollView"
+                app:layout_constraintTop_toTopOf="@+id/horizontalScrollView">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="107dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="SOSYAL HESAP"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    tools:layout_editor_absoluteX="164dp"
+                    tools:layout_editor_absoluteY="544dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="153dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginBottom="46dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Sosyal Hesap'larını oluşturarak sevdiklerine para gönder,iste."
+                    android:textColor="@color/gray"
+                    android:textSize="14dp"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="121dp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginBottom="0dp"
+                    app:srcCompat="@drawable/image" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="26dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/female_shape"
+                    tools:layout_editor_absoluteX="118dp"
+                    tools:layout_editor_absoluteY="548dp" />
 
 
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="276dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                app:cardBackgroundColor="@color/white">
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="107dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="38dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="SOSYAL HESAP"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    tools:layout_editor_absoluteX="164dp"
+                    tools:layout_editor_absoluteY="544dp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="103dp"
+                    android:layout_marginTop="66dp"
+                    android:layout_marginBottom="46dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Oyun servislerine hızlıca para aktarın, vakit kaybetmeyin.  para gönder iste."
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/image2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/playstore" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
 
 
     </HorizontalScrollView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="276dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
-        android:paddingTop="0dp"
 
-        app:cardBackgroundColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
-        app:layout_constraintStart_toStartOf="@+id/horizontalScrollView"
-        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="107dp"
-            android:layout_height="16dp"
-            android:layout_marginLeft="103dp"
-            android:layout_marginTop="38dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="SOSYAL HESAP"
-            android:textColor="@color/black"
-            android:textSize="14dp"
-            tools:layout_editor_absoluteX="164dp"
-            tools:layout_editor_absoluteY="544dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="153dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="103dp"
-            android:layout_marginTop="66dp"
-            android:layout_marginBottom="46dp"
-            android:fontFamily="@font/roboto_regular"
-            android:text="Sosyal Hesap'larını oluşturarak sevdiklerine para gönder,iste."
-            android:textColor="@color/gray"
-            android:textSize="14dp"
-
-            app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="121dp" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="0dp"
-            android:layout_marginBottom="0dp"
-            app:srcCompat="@drawable/image" />
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="26dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/female_shape"
-            tools:layout_editor_absoluteX="118dp"
-            tools:layout_editor_absoluteY="548dp" />
-
-
-    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
