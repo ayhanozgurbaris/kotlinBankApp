@@ -8,63 +8,48 @@
     tools:context=".MainActivity">
 
 
+
     <TextView
         android:id="@+id/howToLoginId"
         android:layout_width="335dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="38dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="96dp"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/login_info"
         android:textAlignment="center"
         android:textColor="@color/tepe"
-        android:textSize="16px"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
-        android:id="@+id/countryCodeId"
-        android:layout_width="128px"
-        android:layout_height="56px"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/edittextbackgroung"
-        android:ems="10"
-        android:hint="@string/ulke_kodu"
-        android:inputType="textPersonName"
-        android:paddingLeft="20px"
-        android:paddingTop="7px"
-        android:paddingRight="20px"
-        android:paddingBottom="7px"
-        android:textColorHint="@color/gray"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/howToLoginId" />
-
-
-    <EditText
         android:id="@+id/gsmId"
         android:layout_width="0dp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/edittextbackgroung"
+        android:background="@drawable/edit_round"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/gsm_no"
-        android:inputType="textPersonName"
-        android:paddingLeft="20px"
-        android:paddingTop="16px"
-        android:paddingRight="20px"
-        android:paddingBottom="16px"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp"
         android:textColorHint="@color/gray"
+        android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/passwordId"
-        app:layout_constraintEnd_toEndOf="@+id/passwordId"
-        app:layout_constraintStart_toEndOf="@+id/countryCodeId"
-        app:layout_constraintTop_toBottomOf="@+id/howToLoginId" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
+        tools:ignore="DuplicateIds" />
 
     <EditText
         android:id="@+id/passwordId"
@@ -73,15 +58,15 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/edittextbackgroung"
+        android:background="@drawable/edit_round"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/password"
-        android:inputType="textPersonName"
-        android:paddingLeft="20px"
-        android:paddingTop="16px"
-        android:paddingRight="20px"
-        android:paddingBottom="16px"
+        android:inputType="numberPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="16dp"
         android:textColor="@color/mavi"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,62 +81,51 @@
         android:background="@drawable/buttonbackground"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/giris"
-        android:textSize="14px"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordId"
         app:layout_constraintStart_toStartOf="@+id/passwordId"
         app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId" />
+
 
     <Button
         android:id="@+id/forgetPasswordId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:background="?selectableItemBackground"
         android:fontFamily="@font/roboto_bold"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
+        android:includeFontPadding="false"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:includeFontPadding="false"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
         android:text="@string/forget_password"
         android:textAllCaps="false"
         android:textColor="@color/mavi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordId" />
 
-
     <Button
         android:id="@+id/hesabınlaNelerYapabilirsin"
+        android:textSize="12dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:background="?selectableItemBackground"
         android:fontFamily="@font/roboto_medium"
         android:includeFontPadding="false"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
         android:letterSpacing="0"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
         android:text="@string/hesabinla_neler_yapabilirsin"
         android:textColor="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginId" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="111dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="56dp"
-        android:paddingTop="8px"
-        android:paddingBottom="8px"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fups" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -173,14 +147,31 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:srcCompat="@drawable/image2" />
 
-    <TextView
-        android:id="@+id/textViewUlkeKodu"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ülke Kodu"
-        android:textColor="@color/mavi"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="206dp" />
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fups" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="263dp"
+        android:background="@drawable/edit_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
+        app:srcCompat="@drawable/country" />
+
+
 
     <!--
     <TextView
