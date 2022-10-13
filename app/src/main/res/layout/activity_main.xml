@@ -8,32 +8,30 @@
     tools:context=".MainActivity">
 
 
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_fups" />
+        app:srcCompat="@drawable/fups"
+        tools:layout_editor_absoluteY="29dp"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
         android:id="@+id/howToLoginId"
         android:layout_width="335dp"
         android:layout_height="0dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/roboto_regular"
         android:text="@string/login_info"
         android:textAlignment="center"
         android:textColor="@color/tepe"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
 
@@ -68,7 +66,7 @@
             android:fontFamily="@font/roboto_bold"
             android:text="+90"
             android:textColor="@color/black"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -98,9 +96,9 @@
         android:paddingTop="16dp"
         android:paddingRight="20dp"
         android:paddingBottom="16dp"
-        android:textColorHint="@color/gray"
-        android:textSize="16dp"
         android:textColor="@color/mavi"
+        android:textColorHint="@color/gray"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/passwordId"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/frameLayout"
@@ -129,13 +127,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gsmId" />
 
-    <Button
+    <TextView
         android:id="@+id/forgetPasswordId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="22dp"
         android:background="?selectableItemBackground"
+        android:clickable="true"
         android:fontFamily="@font/roboto_bold"
         android:includeFontPadding="false"
         android:insetTop="0dp"
@@ -151,7 +150,8 @@
 
 
     <ImageButton
-        android:id="@+id/imageView5"
+        android:id="@+id/info_button"
+        android:clickable="true"
         android:background="@color/background"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
@@ -176,20 +176,21 @@
         android:background="@drawable/buttonbackground"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/giris"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/passwordId"
         app:layout_constraintStart_toStartOf="@+id/passwordId"
         app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId" />
 
 
-
-    <Button
+    <TextView
         android:id="@+id/hesabınlaNelerYapabilirsin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
         android:background="?selectableItemBackground"
+        android:clickable="true"
         android:fontFamily="@font/roboto_medium"
         android:includeFontPadding="false"
         android:insetTop="0dp"
@@ -198,8 +199,10 @@
         android:minWidth="0dp"
         android:minHeight="0dp"
         android:text="@string/hesabinla_neler_yapabilirsin"
+        android:textAlignment="viewStart"
         android:textColor="@color/gray"
-        android:textSize="12dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginId" />
 
@@ -208,11 +211,14 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="wrap_content"
         android:layout_height="151dp"
+        android:layout_marginTop="277dp"
         android:layout_marginBottom="32dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
@@ -241,7 +247,7 @@
                     android:fontFamily="@font/roboto_bold"
                     android:text="SOSYAL HESAP"
                     android:textColor="@color/black"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     tools:layout_editor_absoluteX="164dp"
                     tools:layout_editor_absoluteY="544dp" />
 
@@ -255,7 +261,7 @@
                     android:fontFamily="@font/roboto_regular"
                     android:text="Sosyal Hesap'larını oluşturarak sevdiklerine para gönder,iste."
                     android:textColor="@color/gray"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
 
                     app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollView"
                     tools:ignore="MissingConstraints"
@@ -299,7 +305,7 @@
                     android:fontFamily="@font/roboto_bold"
                     android:text="SOSYAL HESAP"
                     android:textColor="@color/black"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     tools:layout_editor_absoluteX="164dp"
                     tools:layout_editor_absoluteY="544dp" />
 
@@ -307,13 +313,13 @@
                     android:id="@+id/textView37"
                     android:layout_width="150dp"
                     android:layout_height="70dp"
-                    android:layout_marginLeft="103dp"
+                    android:layout_marginStart="103dp"
                     android:layout_marginTop="66dp"
                     android:layout_marginBottom="46dp"
                     android:fontFamily="@font/roboto_regular"
                     android:text="Oyun servislerine hızlıca para aktarın, vakit kaybetmeyin.  para gönder iste."
                     android:textColor="@color/gray"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -335,10 +341,7 @@
         </LinearLayout>
 
 
-
     </HorizontalScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

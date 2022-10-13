@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val forgetPasswordKey = findViewById<Button>(R.id.forgetPasswordId);
+        val forgetPasswordKey = findViewById<TextView>(R.id.forgetPasswordId);
         forgetPasswordKey.setOnClickListener{
             callEmptyActivity()
         }
@@ -37,8 +39,13 @@ class MainActivity : AppCompatActivity() {
             callEmptyActivity()
         }
 
+        val infoButtonKey = findViewById<ImageButton>(R.id.info_button);
+        infoButtonKey.setOnClickListener{
+            callEmptyActivity()
+        }
 
-        val hesabinlaNelerYapabilirsinKey = findViewById<Button>(R.id.hesabınlaNelerYapabilirsin);
+
+        val hesabinlaNelerYapabilirsinKey = findViewById<TextView>(R.id.hesabınlaNelerYapabilirsin);
         hesabinlaNelerYapabilirsinKey.setOnClickListener{
             callEmptyActivity()
         }
