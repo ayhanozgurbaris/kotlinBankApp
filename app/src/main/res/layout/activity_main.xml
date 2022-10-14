@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/fupsLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/fupsLogo" />
 
 
 
@@ -55,7 +55,8 @@
             android:paddingStart="20dp"
             android:paddingTop="8dp"
             android:text="@string/country_code"
-            android:textColor="@color/gray" />
+            android:textColor="@color/gray"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/textView4"
@@ -149,16 +150,17 @@
         android:textAllCaps="false"
         android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordId" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordId"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <ImageButton
         android:id="@+id/info_button"
-        android:clickable="true"
-        android:background="@color/background"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
         android:layout_marginEnd="21dp"
+        android:background="@color/background"
+        android:clickable="true"
         android:paddingVertical="0dp"
         android:paddingLeft="0dp"
         android:paddingTop="0dp"
@@ -169,7 +171,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/forgetPasswordId"
         app:srcCompat="@drawable/ic_stat_name"
-        app:tint="@color/blue" />
+        app:tint="@color/blue"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/loginId"
@@ -207,7 +210,8 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginId" />
+        app:layout_constraintTop_toBottomOf="@+id/loginId"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <HorizontalScrollView
@@ -272,7 +276,7 @@
                     tools:layout_editor_absoluteX="121dp" />
 
                 <ImageView
-                    android:id="@+id/imageView11"
+                    android:id="@+id/social_01"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="0dp"
@@ -280,7 +284,7 @@
                     app:srcCompat="@drawable/social_01" />
 
                 <ImageView
-                    android:id="@+id/imageView12"
+                    android:id="@+id/image_socail_shape"
                     android:layout_width="26dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="60dp"
@@ -290,7 +294,7 @@
                     tools:layout_editor_absoluteY="548dp" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/chevron"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginLeft="248dp"
@@ -348,7 +352,7 @@
                     android:layout_marginTop="20dp"
                     app:srcCompat="@drawable/playstore" />
                 <ImageView
-                    android:id="@+id/imageView59"
+                    android:id="@+id/chevron59"
                     android:layout_width="16dp"
                     android:layout_height="16dp"
                     android:layout_marginLeft="248dp"
@@ -363,8 +367,8 @@
 
     </HorizontalScrollView>
 
+    
     <!--
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@id/gsmId"
         android:layout_width="0dp"
