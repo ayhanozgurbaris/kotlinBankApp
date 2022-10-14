@@ -264,7 +264,7 @@
                     android:layout_marginTop="66dp"
                     android:layout_marginBottom="46dp"
                     android:fontFamily="@font/roboto_regular"
-                    android:text="Sosyal Hesap'larını oluşturarak sevdiklerine para gönder,iste."
+                    android:text="@string/social_account_description"
                     android:textColor="@color/gray"
                     android:textSize="14sp"
 
