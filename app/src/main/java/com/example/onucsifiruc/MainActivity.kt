@@ -1,5 +1,4 @@
 package com.example.onucsifiruc
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +7,8 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,15 +53,22 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+
+
     private fun callPasswordAtSecondPage(){
-        val editText = findViewById<EditText>(R.id.passwordId);
-        val message = editText.text.toString()
+        val editText = findViewById<TextInputEditText>(R.id.ddwff);
+        val message = editText.text.toString();
 
         val intent = Intent(this,SignedIn::class.java).also {
             it.putExtra("EXTRA_MESSAGE",message)
             startActivity(it)
         }
     }
+
+
+
+
 
 
     private fun callEmptyActivity(){
