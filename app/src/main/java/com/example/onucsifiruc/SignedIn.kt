@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 
-class GirisYapildi : AppCompatActivity() {
+class SignedIn : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_giris_yapildi)
+        setContentView(R.layout.activity_signed_in)
 
         val message = intent.getStringExtra("EXTRA_MESSAGE")
 

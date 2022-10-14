@@ -7,9 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
 import androidx.cardview.widget.CardView
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.passwordId);
         val message = editText.text.toString()
 
-        val intent = Intent(this,GirisYapildi::class.java).also {
+        val intent = Intent(this,SignedIn::class.java).also {
             it.putExtra("EXTRA_MESSAGE",message)
             startActivity(it)
         }

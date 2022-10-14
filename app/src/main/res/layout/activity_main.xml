@@ -80,7 +80,6 @@
     </androidx.cardview.widget.CardView>
 
 
-    <!--
 
     <EditText
         android:id="@+id/gsmId"
@@ -99,7 +98,7 @@
         android:paddingTop="16dp"
         android:paddingRight="20dp"
         android:paddingBottom="16dp"
-        android:textColor="@color/mavi"
+        android:textColor="@color/blue"
         android:textColorHint="@color/gray"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/passwordId"
@@ -107,7 +106,7 @@
         app:layout_constraintStart_toEndOf="@+id/frameLayout"
         app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
         tools:ignore="DuplicateIds" />
-    -->
+
 
     <EditText
         android:id="@+id/passwordId"
@@ -364,6 +363,8 @@
 
     </HorizontalScrollView>
 
+    <!--
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@id/gsmId"
         android:layout_width="0dp"
@@ -393,5 +394,6 @@
             android:background="@color/white"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
