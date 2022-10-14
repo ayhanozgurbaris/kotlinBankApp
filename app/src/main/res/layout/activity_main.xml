@@ -54,7 +54,7 @@
             android:background="@color/white"
             android:paddingStart="20dp"
             android:paddingTop="8dp"
-            android:text="Ülke Kodu"
+            android:text="@string/country_code"
             android:textColor="@color/gray" />
 
         <TextView
@@ -64,7 +64,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/roboto_bold"
-            android:text="+90"
+            android:text="@string/_plus90"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -125,7 +125,7 @@
         android:paddingTop="16dp"
         android:paddingRight="20dp"
         android:paddingBottom="16dp"
-        android:textColor="@color/mavi"
+        android:textColor="@color/blue"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +148,7 @@
         android:padding="0dp"
         android:text="@string/forget_password"
         android:textAllCaps="false"
-        android:textColor="@color/mavi"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordId" />
 
@@ -170,7 +170,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/forgetPasswordId"
         app:srcCompat="@drawable/ic_stat_name"
-        app:tint="@color/mavi" />
+        app:tint="@color/blue" />
 
     <Button
         android:id="@+id/loginId"
@@ -250,7 +250,7 @@
                     android:layout_marginLeft="103dp"
                     android:layout_marginTop="38dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="SOSYAL HESAP"
+                    android:text="@string/social_account"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     tools:layout_editor_absoluteX="164dp"
@@ -278,7 +278,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="0dp"
                     android:layout_marginBottom="0dp"
-                    app:srcCompat="@drawable/image" />
+                    app:srcCompat="@drawable/social_01" />
 
                 <ImageView
                     android:id="@+id/imageView12"
@@ -286,7 +286,7 @@
                     android:layout_height="20dp"
                     android:layout_marginLeft="60dp"
                     android:layout_marginTop="20dp"
-                    app:srcCompat="@drawable/female_shape"
+                    app:srcCompat="@drawable/social_shape"
                     tools:layout_editor_absoluteX="118dp"
                     tools:layout_editor_absoluteY="548dp" />
 
@@ -317,7 +317,7 @@
                     android:layout_marginLeft="103dp"
                     android:layout_marginTop="38dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="SOSYAL HESAP"
+                    android:text="@string/social_account"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     tools:layout_editor_absoluteX="164dp"
@@ -331,7 +331,7 @@
                     android:layout_marginTop="66dp"
                     android:layout_marginBottom="46dp"
                     android:fontFamily="@font/roboto_regular"
-                    android:text="Oyun servislerine hızlıca para aktarın, vakit kaybetmeyin.  para gönder iste."
+                    android:text="@string/game_e_pin_description"
                     android:textColor="@color/gray"
                     android:textSize="14sp" />
 
@@ -339,7 +339,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/image2" />
+                    app:srcCompat="@drawable/game_02" />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -377,7 +377,7 @@
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/gsm_no"
         android:inputType="number"
-        android:textColor="@color/mavi"
+        android:textColor="@color/blue"
         android:textColorHint="@color/gray"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/passwordId"
