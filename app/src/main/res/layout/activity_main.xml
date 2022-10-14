@@ -81,7 +81,7 @@
     </androidx.cardview.widget.CardView>
 
 
-
+<!--
     <EditText
         android:id="@+id/gsmId"
         android:layout_width="0dp"
@@ -108,7 +108,7 @@
         app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
         tools:ignore="DuplicateIds" />
 
-
+-->
     <EditText
         android:id="@+id/passwordId"
         android:layout_width="0dp"
@@ -127,6 +127,7 @@
         android:paddingBottom="16dp"
         android:textColor="@color/blue"
         android:textColorHint="@color/gray"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gsmId" />
@@ -172,7 +173,7 @@
         app:layout_constraintTop_toTopOf="@+id/forgetPasswordId"
         app:srcCompat="@drawable/ic_stat_name"
         app:tint="@color/blue"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/loginId"
@@ -367,37 +368,47 @@
 
     </HorizontalScrollView>
 
-    
-    <!--
+
+
     <com.google.android.material.textfield.TextInputLayout
+
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+
         android:id="@id/gsmId"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/edit_round"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/gsm_no"
-        android:inputType="number"
-        android:textColor="@color/blue"
-        android:textColorHint="@color/gray"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/passwordId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="48dp">
+       android:layout_width="0dp"
+       android:layout_height="56dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="40dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginBottom="20dp"
+       android:ems="10"
+       android:fontFamily="@font/roboto_regular"
+       android:hint="@string/gsm_no"
+       android:inputType="number"
+       android:textColor="@color/blue"
+       android:textColorHint="@color/gray"
+       android:textSize="16sp"
+
+       app:helperText="Error Message"
+       app:counterEnabled="true"
+       app:counterMaxLength="9"
+       app:layout_constraintBottom_toTopOf="@+id/passwordId"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toEndOf="@+id/frameLayout"
+       app:layout_constraintTop_toBottomOf="@+id/howToLoginId"
+       tools:layout_editor_absoluteX="1dp"
+       tools:layout_editor_absoluteY="48dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:background="@drawable/edit_round"
 
--->
+            android:inputType="number"
+            android:textColor="@color/black"
+      />
+   </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
