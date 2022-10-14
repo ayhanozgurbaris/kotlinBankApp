@@ -34,9 +34,12 @@
         app:layout_constraintTop_toBottomOf="@+id/fupsLogo" />
 
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/frameLayout"
+
+        android:clickable="true"
+        android:foreground="@drawable/white_button_pressed_effect"
+
         android:layout_width="128dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_round"
