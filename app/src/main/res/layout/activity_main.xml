@@ -331,7 +331,7 @@
                     android:layout_marginLeft="103dp"
                     android:layout_marginTop="38dp"
                     android:fontFamily="@font/roboto_bold"
-                    android:text="@string/social_account"
+                    android:text="@string/game_account"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     tools:layout_editor_absoluteX="164dp"
