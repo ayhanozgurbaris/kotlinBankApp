@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_forget_password.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,22 +26,22 @@ class MainActivity : AppCompatActivity() {
 
         val forgetPasswordKey = findViewById<TextView>(R.id.forgetPasswordId);
         forgetPasswordKey.setOnClickListener{
-            callEmptyActivity()
+            callForgetPasswordActivity()
         }
 
         val bannerOneKey = findViewById<CardView>(R.id.bannerone);
         bannerOneKey.setOnClickListener{
-            callEmptyActivity()
+            callSocialActivity()
         }
 
         val bannerTwoKey = findViewById<CardView>(R.id.bannertwo);
         bannerTwoKey.setOnClickListener{
-            callEmptyActivity()
+            callGameEpinActivity()
         }
 
         val infoButtonKey = findViewById<ImageButton>(R.id.info_button);
         infoButtonKey.setOnClickListener{
-            callEmptyActivity()
+            callInfoButtonActivity()
         }
 
 
@@ -52,7 +53,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
 
 
 
@@ -69,10 +69,30 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
-
     private fun callEmptyActivity(){
         val Intent = Intent(this,EmptyActivity::class.java)
+        startActivity(Intent)
+    }
+
+    private fun callForgetPasswordActivity(){
+        val Intent = Intent(this,ForgetPasswordActivity::class.java)
+        startActivity(Intent)
+    }
+
+
+    private fun callGameEpinActivity(){
+        val Intent = Intent(this,GameEpinActivity::class.java)
+        startActivity(Intent)
+    }
+
+    private fun callSocialActivity(){
+        val Intent = Intent(this,SocialAccountActivity::class.java)
+        startActivity(Intent)
+    }
+
+
+    private fun callInfoButtonActivity(){
+        val Intent = Intent(this,InfoButtonActivity::class.java)
         startActivity(Intent)
     }
 
