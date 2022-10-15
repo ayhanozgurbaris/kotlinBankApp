@@ -233,6 +233,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/roboto_bold"
                 android:text="@string/giris"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
