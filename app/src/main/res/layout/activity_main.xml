@@ -185,6 +185,9 @@
         app:tint="@color/blue"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
+
+    <!--
+
     <Button
         android:id="@+id/loginId"
         android:layout_width="0dp"
@@ -197,6 +200,59 @@
         app:layout_constraintEnd_toEndOf="@+id/passwordId2"
         app:layout_constraintStart_toStartOf="@+id/passwordId2"
         app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId" />
+
+    -->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCardId"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/edit_round"
+        android:clickable="true"
+        android:foreground="@drawable/blue_button_pressed_effect"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordId2"
+        app:layout_constraintStart_toStartOf="@+id/passwordId2"
+        app:layout_constraintTop_toBottomOf="@+id/forgetPasswordId">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/loginId"
+
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/giris"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <TextView
@@ -221,7 +277,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginId"
+        app:layout_constraintTop_toBottomOf="@+id/loginCardId"
         tools:ignore="TouchTargetSizeCheck" />
 
 
@@ -471,50 +527,50 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-<!--
+    <!--
 
-    <com.google.android.material.textfield.TextInputLayout
+        <com.google.android.material.textfield.TextInputLayout
 
-        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
 
-        android:id="@+id/passwordId"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/edit_round"
-        android:ems="10"
-        android:fontFamily="@font/roboto_regular"
-        android:hint="@string/password"
-        android:inputType="numberPassword"
-        android:paddingLeft="20dp"
-        android:paddingTop="16dp"
-
-        android:paddingBottom="16dp"
-        android:textColor="@color/blue"
-        android:textColorHint="@color/gray"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="415dp"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gsmId" >
-
-        <com.google.android.material.textfield.TextInputEditText
-
+            android:id="@+id/passwordId"
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginBottom="0dp"
-            android:background="@color/white"
-            android:inputType="number"
-            android:textColor="@color/black" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/edit_round"
+            android:ems="10"
+            android:fontFamily="@font/roboto_regular"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            android:paddingLeft="20dp"
+            android:paddingTop="16dp"
 
-    -->
+            android:paddingBottom="16dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/gray"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="415dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gsmId" >
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:background="@color/white"
+                android:inputType="number"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
