@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "OnucSifirUc"
+rootProject.name = "FupsCaseStudy"
 include ':app'
