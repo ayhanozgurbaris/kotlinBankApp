@@ -239,7 +239,7 @@
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="153dp"
-                    android:layout_height="48dp"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="103dp"
                     android:layout_marginTop="66dp"
                     android:layout_marginBottom="46dp"
@@ -286,10 +286,10 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/bannertwo"
                 android:layout_width="276dp"
-                android:layout_height="match_parent"
+                android:layout_height="150dp"
                 android:layout_marginLeft="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="@color/white">
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="12dp">
 
                 <TextView
                     android:id="@+id/textView55"
@@ -319,10 +319,10 @@
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
-                    android:layout_marginLeft="-5.5dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/game_02"
-                    app:shapeAppearanceOverlay="@style/roundImageview"/>
+                    android:layout_marginLeft="-5.5dp"
+                    app:shapeAppearanceOverlay="@style/roundImageview"
+                    app:srcCompat="@drawable/game_02" />
 
                 <ImageView
                     android:id="@+id/imageView3"
@@ -331,6 +331,7 @@
                     android:layout_marginLeft="70dp"
                     android:layout_marginTop="20dp"
                     app:srcCompat="@drawable/playstore" />
+
                 <ImageView
                     android:id="@+id/chevron59"
                     android:layout_width="16dp"
