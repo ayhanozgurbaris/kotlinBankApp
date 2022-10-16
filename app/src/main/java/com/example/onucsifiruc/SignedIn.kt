@@ -11,7 +11,7 @@ class SignedIn : AppCompatActivity() {
 
         val message = intent.getStringExtra("EXTRA_MESSAGE")
 
-        val textView = findViewById<TextView>(R.id.textView).apply {
+        val textView = findViewById<TextView>(R.id.secondPagePasswordtextView).apply {
             text = message
         }
     }
