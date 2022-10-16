@@ -256,7 +256,7 @@
                     android:id="@+id/social_01"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="0dp"
+                    android:layout_marginLeft="-5.7dp"
                     android:layout_marginBottom="0dp"
                     app:srcCompat="@drawable/social_01"
                     app:shapeAppearanceOverlay="@style/roundImageview"/>
