@@ -20,7 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Password:"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/secondPagePasswordtextView"
+        app:layout_constraintEnd_toStartOf="@+id/secondPagePasswordtextView"
+        app:layout_constraintTop_toTopOf="@+id/secondPagePasswordtextView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
