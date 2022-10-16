@@ -50,8 +50,6 @@ class MainActivity : AppCompatActivity() {
             callEmptyActivity()
         }
 
-
-
     }
 
 
@@ -95,6 +93,5 @@ class MainActivity : AppCompatActivity() {
         val Intent = Intent(this,InfoButtonActivity::class.java)
         startActivity(Intent)
     }
-
 
 }
