@@ -38,8 +38,8 @@
         android:id="@+id/frameLayout"
 
         android:clickable="true"
+        android:focusable="true"
         android:foreground="@drawable/white_button_pressed_effect"
-
         android:layout_width="128dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_round"
@@ -115,6 +115,7 @@
         android:layout_marginEnd="21dp"
         android:background="@color/background"
         android:clickable="true"
+        android:focusable="true"
         android:paddingVertical="0dp"
         android:paddingLeft="0dp"
         android:paddingTop="0dp"
@@ -137,6 +138,7 @@
         android:layout_marginTop="26dp"
         android:background="@drawable/edit_round"
         android:clickable="true"
+        android:focusable="true"
         android:foreground="@drawable/blue_button_pressed_effect"
         app:cardBackgroundColor="@color/blue"
         app:cardCornerRadius="12dp"
@@ -174,6 +176,7 @@
         android:layout_marginBottom="20dp"
         android:background="?selectableItemBackground"
         android:clickable="true"
+        android:focusable="true"
         android:fontFamily="@font/roboto_medium"
         android:includeFontPadding="false"
         android:insetTop="0dp"
@@ -214,7 +217,7 @@
                 android:layout_height="150dp"
                 android:layout_marginStart="20dp"
                 android:clickable="true"
-
+                android:focusable="true"
                 app:cardCornerRadius="12dp"
                 android:paddingTop="0dp"
                 app:cardBackgroundColor="@color/white"
