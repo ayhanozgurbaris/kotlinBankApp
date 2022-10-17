@@ -1,3 +1,5 @@
+//girilen şifreyi signedIn activity'e taşır.
+
 package com.example.onucsifiruc
 
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +13,7 @@ class SignedIn : AppCompatActivity() {
 
         val message = intent.getStringExtra("EXTRA_MESSAGE")
 
-        val textView = findViewById<TextView>(R.id.secondPagePasswordtextView).apply {
+        findViewById<TextView>(R.id.secondPagePasswordtextView).apply {
             text = message
         }
     }

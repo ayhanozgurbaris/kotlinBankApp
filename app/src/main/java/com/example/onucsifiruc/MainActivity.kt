@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         val forgetPasswordKey = findViewById<TextView>(R.id.forgetPasswordId);
         forgetPasswordKey.setOnClickListener{
             callForgetPasswordActivity()
@@ -55,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun callPasswordAtSecondPage(){
-        val editText = findViewById<TextInputEditText>(R.id.ddwff);
+        val editText = findViewById<TextInputEditText>(R.id.firstpagePassword);
         val message = editText.text.toString();
 
         val intent = Intent(this,SignedIn::class.java).also {

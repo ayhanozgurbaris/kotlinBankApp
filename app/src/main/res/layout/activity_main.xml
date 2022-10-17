@@ -430,7 +430,7 @@
         tools:layout_editor_absoluteY="48dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ddwff"
+            android:id="@+id/firstpagePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_round"
